@@ -1,0 +1,21 @@
+#Initial folder structure for ML model deployment on AWS
+
+ml-deploy-aws/
+├── app/
+│   ├── app.py
+│   ├── requirements.txt
+│   └── Dockerfile
+├── model/
+│   └── train_model.py
+├── terraform/
+│   ├── backend.tf
+│   ├── providers.tf
+│   ├── variables.tf
+│   ├── network.tf
+│   ├── ecr.tf
+│   ├── iam.tf
+│   ├── s3.tf
+│   ├── ecs.tf
+│   ├── outputs.tf
+│   └── versions.tf
+└── README.md
