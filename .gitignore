@@ -1,0 +1,61 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.manifest
+*.spec
+
+# --- Virtual Environment ---
+venv/
+env/
+ENV/
+.venv/
+
+# --- VS Code ---
+.vscode/
+.history/
+
+# --- Logs and Databases ---
+*.log
+*.sqlite3
+
+# --- Environment Variables ---
+.env
+*.env
+
+# --- Cache / Bytecode ---
+*.cache/
+pip-wheel-metadata/
+.pytest_cache/
+.cache/
+.ipynb_checkpoints/
+
+# --- Docker ---
+# Ignore Docker artifacts (if any)
+*.pid
+docker-compose.override.yml
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
+
+# --- Terraform ---
+.terraform/
+*.tfstate
+*.tfstate.backup
+crash.log
+override.tf
+override.tf.json
+terraform.tfvars
+*.tfvars.json
+
+# --- AWS Credentials (Never Commit!) ---
+.aws/
