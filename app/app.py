@@ -1,12 +1,14 @@
 from flask import Flask, request, jsonify
 import joblib
 import numpy as np
+import os
 
 # Initialize Flask app
 app = Flask(__name__)
 
 # Load the trained model
-model = joblib.load("D:\ML Model Deployment\model\model.pkl")
+model_path = os.path.join(os.path.dirname(__file__), '../model/model.pkl')
+model = joblib.load(model_path)
 
 # Define class labels (Iris dataset target names)
 class_labels = ["setosa", "versicolor", "virginica"]
